@@ -92,21 +92,21 @@ a {
         width:400px; height:100px; top:150px;
         position: relative;
     }
-    .inner-date{
+.inner-date{
         height:100px; width: 150px; float:right; margin:0;
         overflow: hidden;
-    }
-    .date{
-        height:100px; width: 150px; margin:0;
-        font-family: sans-serif; font-size: 100px; text-align: center;
+}
+.date{
+        height:100px; width: 150px; margin:0; top:-15px;
+        font-size: 100px; text-align: center;
         position: relative;
         
-    }
-    .date-contents{
+}
+.date-contents{
         width: 250px; border-bottom:solid 4px black; bottom: 25%; position:absolute; 
         text-align: right;
-        font-family: sans-serif; font-size: 2em;
-    }
+        font-size: 2em;
+}
 
 footer {
 	width: 100%;
@@ -243,4 +243,47 @@ footer ul li a:hover {
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 2em
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.3);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; 
+}
+#menu li.active{
+	background:#666;
+	background: rgba(255,255,255, 1);
+	color: #000;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #000;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
 }
